@@ -1,0 +1,23 @@
+#container{
+    display: flex;
+}
+.child{
+    width: 200px;
+    height: 200px;
+}
+#child1{
+    background-color: red;
+   
+}
+#child2{
+    background-color: blueviolet;
+}
+#child3{
+    background-color: yellow;
+}
+/* .signup-form{
+    width:300px;
+} */
+mat-form-field{
+    width:300px;
+}

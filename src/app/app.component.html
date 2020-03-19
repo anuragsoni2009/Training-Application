@@ -1,0 +1,18 @@
+<!-- <button mat-icon-button color="warn">
+  <mat-icon>fingerprint</mat-icon>
+</button> -->
+
+<mat-sidenav-container>
+  <!-- <mat-sidenav [opened]='openSidenav' (closed)='openSidenav=false'> -->
+  <mat-sidenav role="navigation" #sidenav>
+    <app-sidenav-list (onClosing)="sidenav.toggle();"></app-sidenav-list>
+      
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-header (sideNavToggle)="sidenav.toggle()"></app-header>
+    <main fxLayout fxLayoutAlign="center center" style="width: 100%;">
+      <router-outlet></router-outlet>
+    </main>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
